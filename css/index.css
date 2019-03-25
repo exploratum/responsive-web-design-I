@@ -173,11 +173,11 @@ footer p{
     margin-bottom: 20px;
 }
 
-/*******************************/
-/******* Media queries *********/
-/*******************************/
+/*******************************************/
+/******* Media queries Tablet size *********/
+/*******************************************/
 
-@media screen and (max-width:800px){
+@media(max-width:800px){
 
     body{
         width: 95%;
@@ -206,4 +206,59 @@ footer p{
         width: 100%;
     }
     
+}
+
+/*******************************************/
+/******* Media queries Mobile size *********/
+/*******************************************/
+
+@media(max-width:600px){
+
+    .top-header{
+        justify-content: center;
+    }
+
+    .top-header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .top-header nav a{
+        width: 100%;
+        text-align: center;
+        padding: 20px 0 20px;
+        border-bottom: 1px solid grey;
+        margin: 0;
+    }
+
+    .top-header nav a:first-child {
+        border-top: 1px solid grey;
+    }
+
+    /* .top-header .logo{
+        border-bottom: 1px solid grey;
+    } */
+
+
+
+    .top-sections{
+        flex-direction: column;
+    }
+    
+    .top-sections section {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .bottom-sections{
+        flex-direction: column;
+
+    }
+
+    .bottom-sections section{
+        width: 100%;
+        margin-bottom: 25px;
+    }
 }
