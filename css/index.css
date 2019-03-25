@@ -1,3 +1,175 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
 
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/**********************************************************************************/
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/***********************************************************************************/
+
+body{
+    display: block;
+    width: 867px;
+    margin: 0 auto;
+}
+
+/* ***Styling the header*** */
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.top-header nav a {
+    margin: 20px;
+    color: grey;
+}
+
+
+.bottom-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.bottom-header .left-box {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 300%;
+    font-family: "Bangers", cursive;
+ }
+
+.bottom-header .left-box button {
+    width: 150px;
+    height:35px;
+    margin-top: 20px;
+    background: white;
+}
+
+.bottom-header .right-img {
+    width: 45%;
+    height: auto;
+}
+
+
+
+/*****Styling main sections*****/
+
+.top-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    border-top: 1px solid grey;
+}
+
+.top-sections section {
+    width: 49.5%;
+}
+
+.middle-img{
+    margin: 0 auto;
+}
+
+.bottom-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.bottom-sections section {
+    width: 32%;
+}
+
+section h2{
+    font-weight: bold;
+}
+
+/****Styling footer ******/
+
+footer strong {
+    font-weight: bold;
+}
+
+footer p{
+    text-align: center;
+    margin-bottom: 20px;
+}
 
