@@ -173,3 +173,37 @@ footer p{
     margin-bottom: 20px;
 }
 
+/*******************************/
+/******* Media queries *********/
+/*******************************/
+
+@media screen and (max-width:800px){
+
+    body{
+        width: 95%;
+    }
+
+    .top-header{
+        flex-direction: column-reverse;
+    }
+
+    .top-header nav{
+        margin-top: 40px;
+    }
+
+
+    .bottom-header img{
+        display: none;
+    }
+
+    .bottom-header{
+        justify-content: center;
+        width: 100%;
+    
+    }
+
+    .middle-img{
+        width: 100%;
+    }
+    
+}
